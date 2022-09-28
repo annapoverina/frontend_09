@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(../imgs/smile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(74, 81, 74, 0.650);
+            border: 3px solid;
+            border-color: white;
+        }
+
+        .menu {
+            text-decoration: none;
+            list-style: none;
+            padding: 0rem;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .menu__title {
+            padding: 3rem;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu__title:hover {
+            color: rgb(87, 193, 193);
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem;
+            color: white;
+        }
+
+        .imgagnes {
+            width: 350px;
+            height: 200px;
+            padding-left: 1.5rem;
+        }
+
+        .imgagnes:hover {
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+
+        .title__img {
+            color: white;
+            padding-left: 1.5rem;
+        }
+
+        .box__item {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: rgba(76, 195, 255, 0.569);
+            border: 2px solid white;
+        }
+
+        .form__link {
+            padding: 1rem;
+        }
+
+        .title__form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container__form{
+            padding-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__title">Головна</a>
+                </li>
+                <li class="menu__item">
+                    <a href="../pages/hotel.html" class="menu__title">Замовити квитки</a>
+                </li>
+            </ul>    
+        </header>
+        <main class="main">
+            <h1 class="title">Найкращі готелі на Балі</h1>
+            <div class="box__item">
+                <div class="box__link">
+                    <h2 class="title__img">Amar Boutique Hotel</h2>
+                    <img src="../imgs/amar.jpg" alt="hotel1" class="imgagnes">
+                </div>
+                <div class="box__link">
+                    <h2 class="title__img">Atalaya Villas Nusa Penida</h2>
+                    <img src="../imgs/atalaya.jpg" alt="hotel1" class="imgagnes">
+                </div>
+                <div class="box__link">
+                    <h2 class="title__img">Permata Ayung Private Estate</h2>
+                    <img src="../imgs/permata.jpg" alt="hotel1" class="imgagnes">
+                </div>
+            </div>
+            <div class="container__form">
+                <div class="container">
+                    <h1 class="title__form">Замовити квитки</h1>
+                    <form>
+                        <p class="form__link">
+                            <label>
+                                Вкажіть дату
+                                <input type="date" name="calendar"></label>
+                        </p>
+                        <p class="form__link">
+                            <label>
+                                Вкажіть час
+                                <input type="time" name="time" min="08:00" max="18:00" /></label>
+                        </p>
+                        <p class="form__link">
+                            <label>
+                                Вкажіть кількість дорослих
+                                <select name="select1">
+                                    <option value="value1">1</option>
+                                    <option value="value2">2</option>
+                                    <option value="value3">3</option>
+                                    <option value="value4">4</option>
+                                    <option value="value5">5</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p class="form__link">
+                            <label>
+                                Вкажіть кількість дітей
+                                <select name="select1">
+                                    <option value="value1">1</option>
+                                    <option value="value2">2</option>
+                                    <option value="value3">3</option>
+                                    <option value="value4">4</option>
+                                    <option value="value5">5</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p class="form__link">
+                            <label>
+                                Оберіть готель
+                                <select name="select1">
+                                    <option value="value1">Amar Boutique Hotel</option>
+                                    <option value="value2">Atalaya Villas Nusa Penida</option>
+                                    <option value="value3">Permata Ayung Private Estate</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p class="form__link">
+                            <input type="submit" value="Замовити" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
